@@ -29,11 +29,11 @@ func fire_brick():
 	var angv = rand_range(0, 7)
 	var objtype = rand_range(0, 50)
 	if(objtype <= 1):
-		nubrick = preload("res://chair.scn").instance()
+		nubrick = preload("res://scene/chair.xml").instance()
 	elif(objtype <= 2):
-		nubrick = preload("res://ccv.scn").instance()
+		nubrick = preload("res://scene/ccv.xml").instance()
 	else:
-		nubrick = preload("res://brick.scn").instance()
+		nubrick = preload("res://scene/brick.xml").instance()
 	nubrick.set_linear_velocity(Vector2(xvel, yvel))
 	nubrick.set_pos(Vector2(bx, screensize.y + 20))
 	nubrick.set_angular_velocity(angv)
@@ -50,9 +50,9 @@ func explode_bricks():
 		if(b.has_meta("explode")):
 			var met = b.get_meta("explode")
 			if(met == "brick"):
-				explode_brick(b, preload("res://explosion.scn").instance())
+				explode_brick(b, preload("res://scene/explosion.xml").instance())
 			elif(met == "ccv"):
-				explode_brick(b, preload("res://ccv_explosion.scn").instance())
+				explode_brick(b, preload("res://scene/ccv_explosion.xml").instance())
 
 func explode_brick(brick, explosion):
 				explosion.set_linear_velocity(brick.get_linear_velocity())
