@@ -24,6 +24,9 @@ func fire_brick():
 	var dir = 1
 	if(bx > screensize.x / 2):
 		dir = -1
+		bx = bx + 150
+	else:
+		bx = bx - 150
 	var xvel = rand_range(0, 250) * dir
 	var yvel = rand_range(300, 450) * -1
 	var angv = rand_range(0, 7)
