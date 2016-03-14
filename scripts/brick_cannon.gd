@@ -58,13 +58,13 @@ func explode_bricks():
 				explode_brick(b, preload("res://scene/ccv_explosion.xml").instance())
 
 func explode_brick(brick, explosion):
-				explosion.set_linear_velocity(brick.get_linear_velocity())
-				explosion.set_angular_velocity(brick.get_angular_velocity())
-				explosion.set_pos(brick.get_pos())
-				explosion.get_child(0).set_emitting(true)
-				self.add_child(explosion)
-				remove_brick(brick)
-	
+	explosion.set_linear_velocity(brick.get_linear_velocity())
+	explosion.set_angular_velocity(brick.get_angular_velocity())
+	explosion.set_pos(brick.get_pos())
+	explosion.get_child(0).set_emitting(true)
+	self.add_child(explosion)
+	remove_brick(brick)
+
 func remove_brick(brick):
 	self.remove_child(brick)
 	brick.free()
