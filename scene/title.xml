@@ -1,33 +1,38 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<resource_file type="PackedScene" subresource_count="19" version="2.0" version_name="Godot Engine v2.0.stable.custom_build">
+<resource_file type="PackedScene" subresource_count="20" version="2.0" version_name="Godot Engine v2.0.stable.custom_build">
 	<ext_resource path="res://scripts/title_background_scroll.gd" type="Script" index="2"></ext_resource>
 	<ext_resource path="res://scripts/brick_cannon.gd" type="Script" index="13"></ext_resource>
 	<ext_resource path="res://scripts/root_node.gd" type="Script" index="0"></ext_resource>
-	<ext_resource path="res://img/panorama.jpg" type="Texture" index="1"></ext_resource>
 	<ext_resource path="res://img/title.png" type="Texture" index="3"></ext_resource>
-	<ext_resource path="res://img/b_stimulate_i.png" type="Texture" index="4"></ext_resource>
+	<ext_resource path="res://img/panorama.jpg" type="Texture" index="1"></ext_resource>
 	<ext_resource path="res://img/b_dlc_i.png" type="Texture" index="7"></ext_resource>
+	<ext_resource path="res://img/b_stimulate_i.png" type="Texture" index="4"></ext_resource>
 	<ext_resource path="res://img/b_stimulate_a.png" type="Texture" index="5"></ext_resource>
-	<ext_resource path="res://img/b_stimulate_o.png" type="Texture" index="6"></ext_resource>
-	<ext_resource path="res://img/b_dlc_a.png" type="Texture" index="8"></ext_resource>
-	<ext_resource path="res://img/b_escape_i.png" type="Texture" index="10"></ext_resource>
 	<ext_resource path="res://img/b_dlc_o.png" type="Texture" index="9"></ext_resource>
+	<ext_resource path="res://img/b_stimulate_o.png" type="Texture" index="6"></ext_resource>
 	<ext_resource path="res://img/b_escape_a.png" type="Texture" index="11"></ext_resource>
+	<ext_resource path="res://img/b_escape_i.png" type="Texture" index="10"></ext_resource>
+	<ext_resource path="res://img/b_dlc_a.png" type="Texture" index="8"></ext_resource>
 	<ext_resource path="res://img/b_escape_o.png" type="Texture" index="12"></ext_resource>
 	<ext_resource path="res://img/error.jpg" type="Texture" index="14"></ext_resource>
-	<resource type="RectangleShape2D" path="local://1">
+	<resource type="ConvexPolygonShape2D" path="local://1">
 		<real name="custom_solver_bias"> 0 </real>
-		<vector2 name="extents"> 10, 10 </vector2>
+		<vector2_array name="points" len="8"> 			-10, -6, -8.75, -10, 8.75, -10, 10, -6, 10, 6, 8.75, 10, -8.75, 10, -10, 6 </vector2_array>
 
 	</resource>
-	<resource type="RectangleShape2D" path="local://2">
+	<resource type="ConvexPolygonShape2D" path="local://2">
 		<real name="custom_solver_bias"> 0 </real>
-		<vector2 name="extents"> 12.242, 10 </vector2>
+		<vector2_array name="points" len="8"> 			-10, -6, -8.75, -10, 8.75, -10, 10, -6, 10, 6, 8.75, 10, -8.75, 10, -10, 6 </vector2_array>
 
 	</resource>
-	<resource type="RectangleShape2D" path="local://3">
+	<resource type="ConvexPolygonShape2D" path="local://3">
 		<real name="custom_solver_bias"> 0 </real>
-		<vector2 name="extents"> 9.41176, 8.64407 </vector2>
+		<vector2_array name="points" len="8"> 			-10, -6, -8.75, -10, 8.75, -10, 10, -6, 10, 6, 8.75, 10, -8.75, 10, -10, 6 </vector2_array>
+
+	</resource>
+	<resource type="ConvexPolygonShape2D" path="local://4">
+		<real name="custom_solver_bias"> 0 </real>
+		<vector2_array name="points" len="8"> 			-10, -6, -8.75, -10, 8.75, -10, 10, -6, 10, 6, 8.75, 10, -8.75, 10, -10, 6 </vector2_array>
 
 	</resource>
 	<main_resource>
@@ -35,31 +40,35 @@
 			<string> "conn_count" </string>
 			<int> 5 </int>
 			<string> "conns" </string>
-			<int_array  len="30"> 				6, 16, 57, 56, 2, 0, 9, 0, 57, 58, 2, 0, 13, 0, 57, 59, 2, 0, 18, 0, 57, 60, 2, 0, 19, 0, 57, 61, 2, 0 </int_array>
+			<int_array  len="30"> 				6, 16, 65, 64, 2, 0, 9, 0, 65, 66, 2, 0, 13, 0, 65, 67, 2, 0, 18, 0, 65, 68, 2, 0, 19, 0, 65, 69, 2, 0 </int_array>
 			<string> "editable_instances" </string>
 			<array  len="0" shared="false">
 			</array>
 			<string> "names" </string>
-			<string_array  len="62">
+			<string_array  len="70">
 				<string> "Node" </string>
 				<string> "script/script" </string>
 				<string> "__meta__" </string>
 				<string> "Node2D" </string>
 				<string> "Panorama" </string>
+				<string> "texture" </string>
+				<string> "centered" </string>
+				<string> "region" </string>
+				<string> "region_rect" </string>
+				<string> "Sprite" </string>
+				<string> "HBoxContainer" </string>
 				<string> "margin/right" </string>
 				<string> "margin/bottom" </string>
 				<string> "focus/ignore_mouse" </string>
 				<string> "focus/stop_mouse" </string>
 				<string> "size_flags/horizontal" </string>
 				<string> "size_flags/vertical" </string>
-				<string> "texture" </string>
-				<string> "TextureFrame" </string>
-				<string> "HBoxContainer" </string>
 				<string> "alignment" </string>
 				<string> "VBoxContainer" </string>
 				<string> "margin/left" </string>
 				<string> "margin/top" </string>
 				<string> "TitleFrame" </string>
+				<string> "TextureFrame" </string>
 				<string> "ReferenceFrame" </string>
 				<string> "rect/min_size" </string>
 				<string> "StartButton" </string>
@@ -73,18 +82,22 @@
 				<string> "shapes/0/shape" </string>
 				<string> "shapes/0/transform" </string>
 				<string> "shapes/0/trigger" </string>
+				<string> "shapes/1/shape" </string>
+				<string> "shapes/1/transform" </string>
+				<string> "shapes/1/trigger" </string>
 				<string> "collision/layers" </string>
 				<string> "collision/mask" </string>
 				<string> "constant_linear_velocity" </string>
 				<string> "constant_angular_velocity" </string>
 				<string> "friction" </string>
 				<string> "bounce" </string>
-				<string> "CollisionShape2D" </string>
+				<string> "CollisionPolygon2D" </string>
 				<string> "transform/pos" </string>
 				<string> "transform/scale" </string>
-				<string> "shape" </string>
+				<string> "build_mode" </string>
+				<string> "polygon" </string>
+				<string> "shape_range" </string>
 				<string> "trigger" </string>
-				<string> "_update_shape_index" </string>
 				<string> "DLCButton" </string>
 				<string> "SmallSpacer" </string>
 				<string> "EscapeButton" </string>
@@ -110,22 +123,22 @@
 			<array  len="0" shared="false">
 			</array>
 			<string> "nodes" </string>
-			<int_array  len="466"> 				-1, -1, 3, 0, -1, 2, 1, 0, 2, 1, 0, 0, 0, 12, 4, -1, 8, 5, 2, 6, 3, 7, 4, 8, 4, 9, 5, 10, 5, 11, 6, 1, 7, 0, 0, 0, 13, 13, -1, 7, 5, 8, 6, 3, 7, 9, 8, 9, 9, 5, 10, 5, 14, 10, 0, 2, 0, 15, 15, -1, 9, 16, 11, 17, 12, 5, 13, 6, 14, 7, 9, 8, 9, 9, 10, 10, 10, 14, 10, 0, 3, 0, 12, 18, -1, 7, 5, 15, 6, 16, 7, 4, 8, 4, 9, 17, 10, 5, 11, 18, 0, 3, 0, 19, 19, -1, 8, 17, 19, 5, 15, 6, 20, 20, 21, 7, 9, 8, 4, 9, 5, 10, 17, 0, 3, 0, 26, 21, -1, 12, 16, 11, 17, 22, 5, 23, 6, 24, 7, 9, 8, 4, 9, 10, 10, 5, 22, 9, 23, 25, 24, 26, 25, 27, 0, 6, 0, 27, 27, -1, 10, 28, 9, 29, 28, 30, 29, 31, 9, 32, 10, 33, 10, 34, 30, 35, 31, 36, 32, 37, 32, 0, 7, 0, 38, 38, -1, 5, 39, 33, 40, 34, 41, 28, 42, 9, 43, 35, 0, 3, 0, 26, 44, -1, 12, 16, 11, 17, 36, 5, 23, 6, 37, 7, 9, 8, 4, 9, 10, 10, 5, 22, 9, 23, 38, 24, 39, 25, 40, 0, 9, 0, 27, 27, -1, 10, 28, 9, 29, 41, 30, 42, 31, 9, 32, 10, 33, 10, 34, 30, 35, 31, 36, 32, 37, 32, 0, 10, 0, 38, 38, -1, 5, 39, 43, 40, 44, 41, 41, 42, 9, 43, 35, 0, 3, 0, 19, 45, -1, 8, 17, 45, 5, 15, 6, 46, 20, 47, 7, 9, 8, 4, 9, 5, 10, 17, 0, 3, 0, 26, 46, -1, 12, 16, 11, 17, 48, 5, 23, 6, 49, 7, 9, 8, 4, 9, 10, 10, 5, 22, 9, 23, 50, 24, 51, 25, 52, 0, 13, 0, 27, 27, -1, 10, 28, 9, 29, 53, 30, 54, 31, 9, 32, 10, 33, 10, 34, 30, 35, 31, 36, 32, 37, 32, 0, 14, 0, 38, 38, -1, 5, 39, 55, 40, 56, 41, 53, 42, 9, 43, 35, 0, 0, 0, 3, 47, -1, 1, 1, 57, 0, 0, 0, 12, 48, -1, 11, 49, 5, 50, 9, 16, 58, 17, 11, 5, 59, 6, 60, 7, 4, 8, 4, 9, 5, 10, 5, 11, 61, 0, 17, 0, 54, 51, -1, 11, 52, 31, 16, 62, 17, 63, 5, 64, 6, 65, 7, 9, 8, 4, 9, 5, 10, 5, 22, 9, 53, 9, 0, 17, 0, 54, 55, -1, 10, 52, 31, 16, 66, 5, 67, 6, 68, 7, 9, 8, 4, 9, 5, 10, 5, 22, 9, 53, 9, 0 </int_array>
+			<int_array  len="472"> 				-1, -1, 3, 0, -1, 2, 1, 0, 2, 1, 0, 0, 0, 9, 4, -1, 5, 5, 2, 6, 3, 7, 4, 8, 5, 1, 6, 0, 0, 0, 10, 10, -1, 7, 11, 7, 12, 8, 13, 3, 14, 3, 15, 9, 16, 9, 17, 10, 0, 2, 0, 18, 18, -1, 9, 19, 11, 20, 12, 11, 13, 12, 14, 13, 3, 14, 3, 15, 10, 16, 10, 17, 10, 0, 3, 0, 22, 21, -1, 7, 11, 15, 12, 16, 13, 4, 14, 4, 15, 17, 16, 9, 5, 18, 0, 3, 0, 23, 23, -1, 8, 20, 19, 11, 15, 12, 20, 24, 21, 13, 3, 14, 4, 15, 9, 16, 17, 0, 3, 0, 30, 25, -1, 12, 19, 11, 20, 22, 11, 23, 12, 24, 13, 3, 14, 4, 15, 10, 16, 9, 26, 3, 27, 25, 28, 26, 29, 27, 0, 6, 0, 31, 31, -1, 13, 32, 3, 33, 28, 34, 29, 35, 3, 36, 30, 37, 29, 38, 3, 39, 10, 40, 10, 41, 31, 42, 32, 43, 33, 44, 33, 0, 7, 0, 45, 45, -1, 6, 46, 34, 47, 35, 48, 36, 49, 37, 50, 31, 51, 3, 0, 3, 0, 30, 52, -1, 12, 19, 11, 20, 38, 11, 23, 12, 39, 13, 3, 14, 4, 15, 10, 16, 9, 26, 3, 27, 40, 28, 41, 29, 42, 0, 9, 0, 31, 31, -1, 10, 32, 3, 33, 43, 34, 44, 35, 3, 39, 10, 40, 10, 41, 31, 42, 32, 43, 33, 44, 33, 0, 10, 0, 45, 45, -1, 6, 46, 45, 47, 35, 48, 36, 49, 37, 50, 31, 51, 3, 0, 3, 0, 23, 53, -1, 8, 20, 46, 11, 15, 12, 47, 24, 48, 13, 3, 14, 4, 15, 9, 16, 17, 0, 3, 0, 30, 54, -1, 12, 19, 11, 20, 49, 11, 23, 12, 50, 13, 3, 14, 4, 15, 10, 16, 9, 26, 3, 27, 51, 28, 52, 29, 53, 0, 13, 0, 31, 31, -1, 10, 32, 3, 33, 54, 34, 44, 35, 3, 39, 10, 40, 10, 41, 31, 42, 32, 43, 33, 44, 33, 0, 14, 0, 45, 45, -1, 6, 46, 45, 47, 35, 48, 36, 49, 37, 50, 31, 51, 3, 0, 0, 0, 3, 55, -1, 1, 1, 55, 0, 0, 0, 22, 56, -1, 11, 57, 9, 58, 3, 19, 56, 20, 11, 11, 57, 12, 58, 13, 4, 14, 4, 15, 9, 16, 9, 5, 59, 0, 17, 0, 62, 59, -1, 11, 60, 32, 19, 60, 20, 61, 11, 62, 12, 63, 13, 3, 14, 4, 15, 9, 16, 9, 26, 3, 61, 3, 0, 17, 0, 62, 63, -1, 10, 60, 32, 19, 64, 11, 65, 12, 66, 13, 3, 14, 4, 15, 9, 16, 9, 26, 3, 61, 3, 0 </int_array>
 			<string> "variants" </string>
-			<array  len="69" shared="false">
+			<array  len="67" shared="false">
 				<resource  external="0">  </resource>
 				<dictionary  shared="false">
 					<string> "__editor_plugin_screen__" </string>
 					<string> "Script" </string>
 				</dictionary>
-				<real> 3318 </real>
-				<real> 720 </real>
-				<bool> True </bool>
-				<int> 2 </int>
 				<resource  external="1">  </resource>
+				<bool> False </bool>
+				<bool> True </bool>
+				<rect2> 0, 0, 1280, 720 </rect2>
 				<resource  external="2">  </resource>
 				<real> 1280 </real>
-				<bool> False </bool>
+				<real> 720 </real>
+				<int> 2 </int>
 				<int> 1 </int>
 				<real> 240 </real>
 				<real> 38 </real>
@@ -146,21 +159,22 @@
 				<resource  external="6">  </resource>
 				<resource  resource_type="Shape2D" path="local://1">  </resource>
 				<matrix32> 16, -0, 0, 5, 160, 50 </matrix32>
+				<resource  resource_type="Shape2D" path="local://2">  </resource>
 				<vector2> 0, 0 </vector2>
 				<real> 0 </real>
 				<real> 1 </real>
 				<vector2> 160, 50 </vector2>
 				<vector2> 16, 5 </vector2>
 				<int> 0 </int>
+				<vector2_array  len="8"> 					-10, 6, -8.75, 10, 8.75, 10, 10, 6, 10, -6, 8.75, -10, -8.75, -10, -10, -6 </vector2_array>
 				<real> 386 </real>
 				<real> 486 </real>
 				<resource  external="7">  </resource>
 				<resource  external="8">  </resource>
 				<resource  external="9">  </resource>
-				<resource  resource_type="Shape2D" path="local://2">  </resource>
-				<matrix32> 13.1923, -0, 0, 4.96154, 158.5, 51.5 </matrix32>
-				<vector2> 158.5, 51.5 </vector2>
-				<vector2> 13.1923, 4.96154 </vector2>
+				<resource  resource_type="Shape2D" path="local://3">  </resource>
+				<matrix32> 16, -0, 0, 5, 160, 50 </matrix32>
+				<vector2> 160, 50 </vector2>
 				<real> 490 </real>
 				<real> 540 </real>
 				<vector2> 100, 50 </vector2>
@@ -169,10 +183,7 @@
 				<resource  external="10">  </resource>
 				<resource  external="11">  </resource>
 				<resource  external="12">  </resource>
-				<resource  resource_type="Shape2D" path="local://3">  </resource>
-				<matrix32> 17, -0, 0, 5.9, 160, 49 </matrix32>
-				<vector2> 160, 49 </vector2>
-				<vector2> 17, 5.9 </vector2>
+				<resource  resource_type="Shape2D" path="local://4">  </resource>
 				<resource  external="13">  </resource>
 				<real> 990 </real>
 				<real> 1192 </real>
