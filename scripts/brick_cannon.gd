@@ -4,13 +4,13 @@ var nubrick
 var mousedown
 
 func _ready():
-	set_process(true)
+	set_fixed_process(true)
 	timer = 0
 	mousedown = false
 	screensize = get_viewport_rect().size
 	randomize()
 
-func _process(delta):
+func _fixed_process(delta):
 	explode_bricks()
 	if(timer > 0.5):
 		timer = 0
